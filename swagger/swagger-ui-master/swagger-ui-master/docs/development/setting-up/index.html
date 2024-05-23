@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../../img/favicon.ico">
+        <title>Setting Up - Your Documentation Site</title>
+        <link href="../../../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../../../..">Your Documentation Site</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../../../../../markdown/Introduction/" class="nav-link">Introduction</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../../../../../markdown/authentication/" class="nav-link">Authentication</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../../../../openapi.yaml" class="nav-link">Endpoints</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Swagger UI</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../" class="dropdown-item">README</a>
+</li>
+                                    
+<li>
+    <a href="../../../SECURITY/" class="dropdown-item">SECURITY</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Docs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../" class="dropdown-item">README</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Customization</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../customization/add-plugin/" class="dropdown-item">Add Plugin</a>
+</li>
+            
+<li>
+    <a href="../../customization/custom-layout/" class="dropdown-item">Custom Layout</a>
+</li>
+            
+<li>
+    <a href="../../customization/overview/" class="dropdown-item">Overview</a>
+</li>
+            
+<li>
+    <a href="../../customization/plug-points/" class="dropdown-item">Plug Points</a>
+</li>
+            
+<li>
+    <a href="../../customization/plugin-api/" class="dropdown-item">Plugin API</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Development</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../scripts/" class="dropdown-item">Scripts</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Setting Up</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Usage</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../usage/configuration/" class="dropdown-item">Configuration</a>
+</li>
+            
+<li>
+    <a href="../../usage/cors/" class="dropdown-item">CORS</a>
+</li>
+            
+<li>
+    <a href="../../usage/deep-linking/" class="dropdown-item">Deep Linking</a>
+</li>
+            
+<li>
+    <a href="../../usage/installation/" class="dropdown-item">Installation</a>
+</li>
+            
+<li>
+    <a href="../../usage/limitations/" class="dropdown-item">Limitations</a>
+</li>
+            
+<li>
+    <a href="../../usage/oauth2/" class="dropdown-item">OAuth2</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../scripts/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../usage/configuration/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#setting-up-a-dev-environment" class="nav-link">Setting up a dev environment</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#bonus-points" class="nav-link">Bonus points</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="setting-up-a-dev-environment">Setting up a dev environment</h1>
+<p>Swagger UI includes a development server that provides hot module reloading and unminified stack traces, for easier development.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>git, any version</li>
+<li><strong>Node.js &gt;=20.3.0</strong> and <strong>npm &gt;=9.6.7</strong> are the minimum required versions that this repo runs on, but we always recommend using the latest version of Node.js.</li>
+</ul>
+<h3 id="steps">Steps</h3>
+<ol>
+<li><code>git clone https://github.com/swagger-api/swagger-ui.git</code></li>
+<li><code>cd swagger-ui</code></li>
+<li><code>npm install</code></li>
+<li><code>npm run dev</code></li>
+<li>Wait a bit</li>
+<li>Open http://localhost:3200/</li>
+</ol>
+<h3 id="using-your-own-local-api-definition-with-local-dev-build">Using your own local api definition with local dev build</h3>
+<p>You can specify a local file in <code>dev-helpers/dev-helper-initializer.js</code> by changing the <code>url</code> parameter. This local file MUST be located in the <code>dev-helpers</code> directory or a subdirectory. As a convenience and best practice, we recommend that you create a subdirectory, <code>dev-helpers/examples</code>, which is already specified in <code>.gitignore</code>.</p>
+<p>replace</p>
+<pre><code>url: &quot;https://petstore.swagger.io/v2/swagger.json&quot;,
+</code></pre>
+<p>with</p>
+<pre><code>url: &quot;./examples/your-local-api-definition.yaml&quot;,
+</code></pre>
+<p>Files in <code>dev-helpers</code> should NOT be committed to git. The exception is if you are fixing something in <code>index.html</code>, <code>oauth2-redirect.html</code>, <code>dev-helper-initializer.js</code>, or introducing a new support file.</p>
+<h2 id="bonus-points">Bonus points</h2>
+<ul>
+<li>Swagger UI includes an ESLint rule definition. If you use a graphical editor, consider installing an ESLint plugin, which will point out syntax and style errors for you as you code.</li>
+<li>The linter runs as part of the PR test sequence, so don't think you can get away with not paying attention to it!</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../../../js/base.js"></script>
+        <script src="../../../../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
