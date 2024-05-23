@@ -4,7 +4,7 @@ nav:
   - Home: index.md
   - Introduction: markdown/Introduction.md
   - Authentication: markdown/authentication.md
-  - Endpoints: swagger/openapi.yaml
+  - Endpoints: "https://petstore.swagger.io/v2/swagger.json"
   - Swagger UI:
       - README: swagger/swagger-ui-master/swagger-ui-master/README.md
       - SECURITY: swagger/swagger-ui-master/swagger-ui-master/SECURITY.md
