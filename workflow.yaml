@@ -1,0 +1,29 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Set this to your default branch
+  workflow_dispatch:  # This allows manual triggering of the workflow
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install MkDocs
+        run: |
+          pip install mkdocs
+          mkdocs --version
+
+      - name: Build the site
+        run: mkdocs build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}  # You need to set up a deploy key
+          publish_dir: ./site  # Adjust this to your build directory
