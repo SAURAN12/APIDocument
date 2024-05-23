@@ -1,0 +1,28 @@
+site_name: Your Documentation Site
+
+nav:
+  - Home: index.md
+  - Introduction: markdown/Introduction.md
+  - Authentication: markdown/authentication.md
+  - Endpoints: swagger/openapi.yaml
+  - Swagger UI:
+      - README: swagger/swagger-ui-master/swagger-ui-master/README.md
+      - SECURITY: swagger/swagger-ui-master/swagger-ui-master/SECURITY.md
+      - Docs:
+          - README: swagger/swagger-ui-master/swagger-ui-master/docs/README.md
+          - Customization:
+              - Add Plugin: swagger/swagger-ui-master/swagger-ui-master/docs/customization/add-plugin.md
+              - Custom Layout: swagger/swagger-ui-master/swagger-ui-master/docs/customization/custom-layout.md
+              - Overview: swagger/swagger-ui-master/swagger-ui-master/docs/customization/overview.md
+              - Plug Points: swagger/swagger-ui-master/swagger-ui-master/docs/customization/plug-points.md
+              - Plugin API: swagger/swagger-ui-master/swagger-ui-master/docs/customization/plugin-api.md
+          - Development:
+              - Scripts: swagger/swagger-ui-master/swagger-ui-master/docs/development/scripts.md
+              - Setting Up: swagger/swagger-ui-master/swagger-ui-master/docs/development/setting-up.md
+          - Usage:
+              - Configuration: swagger/swagger-ui-master/swagger-ui-master/docs/usage/configuration.md
+              - CORS: swagger/swagger-ui-master/swagger-ui-master/docs/usage/cors.md
+              - Deep Linking: swagger/swagger-ui-master/swagger-ui-master/docs/usage/deep-linking.md
+              - Installation: swagger/swagger-ui-master/swagger-ui-master/docs/usage/installation.md
+              - Limitations: swagger/swagger-ui-master/swagger-ui-master/docs/usage/limitations.md
+              - OAuth2: swagger/swagger-ui-master/swagger-ui-master/docs/usage/oauth2.md

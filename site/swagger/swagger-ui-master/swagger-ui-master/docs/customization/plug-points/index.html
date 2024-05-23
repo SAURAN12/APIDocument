@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../../img/favicon.ico">
+        <title>Plug Points - Your Documentation Site</title>
+        <link href="../../../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../../../..">Your Documentation Site</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../../../../../markdown/Introduction/" class="nav-link">Introduction</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../../../../../markdown/authentication/" class="nav-link">Authentication</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../../../../openapi.yaml" class="nav-link">Endpoints</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Swagger UI</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../" class="dropdown-item">README</a>
+</li>
+                                    
+<li>
+    <a href="../../../SECURITY/" class="dropdown-item">SECURITY</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Docs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../" class="dropdown-item">README</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Customization</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../add-plugin/" class="dropdown-item">Add Plugin</a>
+</li>
+            
+<li>
+    <a href="../custom-layout/" class="dropdown-item">Custom Layout</a>
+</li>
+            
+<li>
+    <a href="../overview/" class="dropdown-item">Overview</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Plug Points</a>
+</li>
+            
+<li>
+    <a href="../plugin-api/" class="dropdown-item">Plugin API</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Development</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../development/scripts/" class="dropdown-item">Scripts</a>
+</li>
+            
+<li>
+    <a href="../../development/setting-up/" class="dropdown-item">Setting Up</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Usage</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../usage/configuration/" class="dropdown-item">Configuration</a>
+</li>
+            
+<li>
+    <a href="../../usage/cors/" class="dropdown-item">CORS</a>
+</li>
+            
+<li>
+    <a href="../../usage/deep-linking/" class="dropdown-item">Deep Linking</a>
+</li>
+            
+<li>
+    <a href="../../usage/installation/" class="dropdown-item">Installation</a>
+</li>
+            
+<li>
+    <a href="../../usage/limitations/" class="dropdown-item">Limitations</a>
+</li>
+            
+<li>
+    <a href="../../usage/oauth2/" class="dropdown-item">OAuth2</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../overview/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../plugin-api/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#plug-points" class="nav-link">Plug points</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="plug-points">Plug points</h1>
+<p>Swagger UI exposes most of its internal logic through the plugin system.</p>
+<p>Often, it is beneficial to override the core internals to achieve custom behavior.</p>
+<h3 id="note-semantic-versioning">Note: Semantic Versioning</h3>
+<p>Swagger UI's internal APIs are <em>not</em> part of our public contract, which means that they can change without the major version change.</p>
+<p>If your custom plugins wrap, extend, override, or consume any internal core APIs, we recommend specifying a specific minor version of Swagger UI to use in your application, because they will <em>not</em> change between patch versions.</p>
+<p>If you're installing Swagger UI via NPM, for example, you can do this by using a tilde:</p>
+<pre><code class="language-js">{
+  &quot;dependencies&quot;: {
+    &quot;swagger-ui&quot;: &quot;~3.11.0&quot;
+  }
+}
+</code></pre>
+<h3 id="fnopsfilter"><code>fn.opsFilter</code></h3>
+<p>When using the <code>filter</code> option, tag names will be filtered by the user-provided value. If you'd like to customize this behavior, you can override the default <code>opsFilter</code> function.</p>
+<p>For example, you can implement a multiple-phrase filter:</p>
+<pre><code class="language-js">const MultiplePhraseFilterPlugin = function() {
+  return {
+    fn: {
+      opsFilter: (taggedOps, phrase) =&gt; {
+        const phrases = phrase.split(&quot;, &quot;)
+
+        return taggedOps.filter((val, key) =&gt; {
+          return phrases.some(item =&gt; key.indexOf(item) &gt; -1)
+        })
+      }
+    }
+  }
+}
+</code></pre>
+<h3 id="logo-component">Logo component</h3>
+<p>While using the Standalone Preset the SwaggerUI logo is rendered in the Top Bar.
+The logo can be exchanged by replacing the <code>Logo</code> component via the plugin api:</p>
+<pre><code class="language-jsx">import React from &quot;react&quot;;
+const MyLogoPlugin = {
+  components: {
+    Logo: () =&gt; (
+      &lt;img alt=&quot;My Logo&quot; height=&quot;40&quot; src=&quot;data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTM3IiBoZWlnaHQ9IjEzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCiA8Zz4KICA8dGl0bGU+TGF5ZXIgMTwvdGl0bGU+CiAgPHRleHQgdHJhbnNmb3JtPSJtYXRyaXgoMy40Nzc2OSAwIDAgMy4yNjA2NyAtNjczLjEyOCAtNjkxLjk5MykiIHN0cm9rZT0iIzAwMCIgZm9udC1zdHlsZT0ibm9ybWFsIiBmb250LXdlaWdodD0ibm9ybWFsIiB4bWw6c3BhY2U9InByZXNlcnZlIiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtZmFtaWx5PSInT3BlbiBTYW5zIEV4dHJhQm9sZCciIGZvbnQtc2l6ZT0iMjQiIGlkPSJzdmdfMSIgeT0iMjQxLjIyMTkyIiB4PSIxOTYuOTY5MjEiIHN0cm9rZS13aWR0aD0iMCIgZmlsbD0iIzYyYTAzZiI+TXkgTG9nbzwvdGV4dD4KICA8cGF0aCBpZD0ic3ZnXzIiIGQ9Im0zOTUuNjAyNSw1MS4xODM1OWw1My44Nzc3MSwwbDE2LjY0ODYzLC01MS4xODM1OGwxNi42NDg2NCw1MS4xODM1OGw1My44Nzc3LDBsLTQzLjU4NzksMzEuNjMyODNsMTYuNjQ5NDksNTEuMTgzNThsLTQzLjU4NzkyLC0zMS42MzM2OWwtNDMuNTg3OTEsMzEuNjMzNjlsMTYuNjQ5NDksLTUxLjE4MzU4bC00My41ODc5MiwtMzEuNjMyODN6IiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZT0iIzAwMCIgZmlsbD0iIzYyYTAzZiIvPgogPC9nPgo8L3N2Zz4=&quot;/&gt;
+    )
+  }
+}
+</code></pre>
+<h3 id="json-schema-components">JSON Schema components</h3>
+<p>In swagger there are so called JSON Schema components. These are used to render inputs for parameters and components of request bodies with <code>application/x-www-form-urlencoded</code> or <code>multipart/*</code> media-type.</p>
+<p>Internally swagger uses following mapping to find the JSON Schema component from OpenAPI Specification schema information:</p>
+<p>For each schema’s type(eg. <code>string</code>, <code>array</code>, …) and if defined schema’s format (eg. ‘date’, ‘uuid’, …) there is a corresponding component mapping:</p>
+<p><strong>If format defined:</strong></p>
+<pre><code class="language-js">`JsonSchema_${type}_${format}`
+</code></pre>
+<p><strong>Fallback if <code>JsonSchema_${type}_${format}</code> component does not exist or format not defined:</strong></p>
+<pre><code class="language-js">`JsonSchema_${type}`
+</code></pre>
+<p><strong>Default:</strong></p>
+<pre><code class="language-js">`JsonSchema_string`
+</code></pre>
+<p>With this, one can define custom input components or override existing.</p>
+<h4 id="example-date-picker-plugin">Example Date-Picker plugin</h4>
+<p>If one would like to input date values you could provide a custom plugin to integrate <a href="https://www.npmjs.com/package/react-datepicker">react-datepicker</a> into swagger-ui.
+All you need to do is to create a component to wrap <a href="https://www.npmjs.com/package/react-datepicker">react-datepicker</a> accordingly to the format.</p>
+<p><strong>There are two cases:</strong>
+- <code>yaml
+  type: string
+  format: date</code>
+  The resulting name for mapping to succeed: <code>JsonSchema_string_date</code>
+- <code>yaml
+  type: string
+  format: date-time</code>
+  The resulting name for mapping to succeed: <code>JsonSchema_string_date-time</code></p>
+<p>This creates the need for two components and simple logic to strip any time input in case the format is date:</p>
+<pre><code class="language-js">import React from &quot;react&quot;;
+import DatePicker from &quot;react-datepicker&quot;;
+import &quot;react-datepicker/dist/react-datepicker.css&quot;;
+
+const JsonSchema_string_date = (props) =&gt; {
+  const dateNumber = Date.parse(props.value);
+  const date = dateNumber
+    ? new Date(dateNumber)
+    : new Date();
+
+  return (
+    &lt;DatePicker
+      selected={date}
+      onChange={d =&gt; props.onChange(d.toISOString().substring(0, 10))}
+    /&gt;
+  );
+}
+
+const JsonSchema_string_date_time = (props) =&gt; {
+  const dateNumber = Date.parse(props.value);
+  const date = dateNumber
+    ? new Date(dateNumber)
+    : new Date();
+
+  return (
+    &lt;DatePicker
+      selected={date}
+      onChange={d =&gt; props.onChange(d.toISOString())}
+      showTimeSelect
+      timeFormat=&quot;p&quot;
+      dateFormat=&quot;Pp&quot;
+    /&gt;
+  );
+}
+
+
+export const DateTimeSwaggerPlugin = {
+  components: {
+    JsonSchema_string_date: JsonSchema_string_date,
+    &quot;JsonSchema_string_date-time&quot;: JsonSchema_string_date_time
+  }
+};
+</code></pre>
+<h3 id="request-snippets">Request Snippets</h3>
+<p>SwaggerUI can be configured with the <code>requestSnippetsEnabled: true</code> option to activate Request Snippets.<br />
+Instead of the generic curl that is generated upon doing a request. It gives you more granular options:
+- curl for bash
+- curl for cmd
+- curl for powershell</p>
+<p>There might be the case where you want to provide your own snipped generator. This can be done by using the plugin api.<br />
+A Request Snipped generator consists of the configuration and a <code>fn</code>, <br />
+which takes the internal request object and transforms it to the desired snippet.</p>
+<pre><code class="language-js">// Add config to Request Snippets Configuration with an unique key like &quot;node_native&quot; 
+const snippetConfig = {
+  requestSnippetsEnabled: true,
+  requestSnippets: {
+    generators: {
+      &quot;node_native&quot;: {
+        title: &quot;NodeJs Native&quot;,
+        syntax: &quot;javascript&quot;
+      }
+    }
+  }
+}
+
+const SnippedGeneratorNodeJsPlugin = {
+  fn: {
+    // use `requestSnippetGenerator_` + key from config (node_native) for generator fn
+    requestSnippetGenerator_node_native: (request) =&gt; {
+      const url = new Url(request.get(&quot;url&quot;))
+      let isMultipartFormDataRequest = false
+      const headers = request.get(&quot;headers&quot;)
+      if(headers &amp;&amp; headers.size) {
+        request.get(&quot;headers&quot;).map((val, key) =&gt; {
+          isMultipartFormDataRequest = isMultipartFormDataRequest || /^content-type$/i.test(key) &amp;&amp; /^multipart\/form-data$/i.test(val)
+        })
+      }
+      const packageStr = url.protocol === &quot;https:&quot; ? &quot;https&quot; : &quot;http&quot;
+      let reqBody = request.get(&quot;body&quot;)
+      if (request.get(&quot;body&quot;)) {
+        if (isMultipartFormDataRequest &amp;&amp; [&quot;POST&quot;, &quot;PUT&quot;, &quot;PATCH&quot;].includes(request.get(&quot;method&quot;))) {
+          return &quot;throw new Error(\&quot;Currently unsupported content-type: /^multipart\\/form-data$/i\&quot;);&quot;
+        } else {
+          if (!Map.isMap(reqBody)) {
+            if (typeof reqBody !== &quot;string&quot;) {
+              reqBody = JSON.stringify(reqBody)
+            }
+          } else {
+            reqBody = getStringBodyOfMap(request)
+          }
+        }
+      } else if (!request.get(&quot;body&quot;) &amp;&amp; request.get(&quot;method&quot;) === &quot;POST&quot;) {
+        reqBody = &quot;&quot;
+      }
+
+      const stringBody = &quot;`&quot; + (reqBody || &quot;&quot;)
+          .replace(/\\n/g, &quot;\n&quot;)
+          .replace(/`/g, &quot;\\`&quot;)
+        + &quot;`&quot;
+
+      return `const http = require(&quot;${packageStr}&quot;);
+const options = {
+  &quot;method&quot;: &quot;${request.get(&quot;method&quot;)}&quot;,
+  &quot;hostname&quot;: &quot;${url.host}&quot;,
+  &quot;port&quot;: ${url.port || &quot;null&quot;},
+  &quot;path&quot;: &quot;${url.pathname}&quot;${headers &amp;&amp; headers.size ? `,
+  &quot;headers&quot;: {
+    ${request.get(&quot;headers&quot;).map((val, key) =&gt; `&quot;${key}&quot;: &quot;${val}&quot;`).valueSeq().join(&quot;,\n    &quot;)}
+  }` : &quot;&quot;}
+};
+const req = http.request(options, function (res) {
+  const chunks = [];
+  res.on(&quot;data&quot;, function (chunk) {
+    chunks.push(chunk);
+  });
+  res.on(&quot;end&quot;, function () {
+    const body = Buffer.concat(chunks);
+    console.log(body.toString());
+  });
+});
+${reqBody ? `\nreq.write(${stringBody});` : &quot;&quot;}
+req.end();`
+    }
+  }
+}
+
+const ui = SwaggerUIBundle({
+  &quot;dom_id&quot;: &quot;#swagger-ui&quot;,
+  deepLinking: true,
+  presets: [
+    SwaggerUIBundle.presets.apis,
+    SwaggerUIStandalonePreset
+  ],
+  plugins: [
+    SwaggerUIBundle.plugins.DownloadUrl,
+    SnippedGeneratorNodeJsPlugin
+  ],
+  layout: &quot;StandaloneLayout&quot;,
+  validatorUrl: &quot;https://validator.swagger.io/validator&quot;,
+  url: &quot;https://petstore.swagger.io/v2/swagger.json&quot;,
+  ...snippetConfig,
+})
+</code></pre>
+<h3 id="error-handling">Error handling</h3>
+<p>SwaggerUI comes with a <code>safe-render</code> plugin that handles error handling allows plugging into error handling system and modify it.</p>
+<p>The plugin accepts a list of component names that should be protected by error boundaries.  </p>
+<p>Its public API looks like this:</p>
+<pre><code class="language-js">{
+  fn: {
+    componentDidCatch,
+    withErrorBoundary: withErrorBoundary(getSystem),
+  },
+  components: {
+    ErrorBoundary,
+    Fallback,
+  },
+}
+</code></pre>
+<p>safe-render plugin is automatically utilized by <a href="https://github.com/swagger-api/swagger-ui/blob/78f62c300a6d137e65fd027d850981b010009970/src/core/presets/base.js">base</a> and <a href="https://github.com/swagger-api/swagger-ui/tree/78f62c300a6d137e65fd027d850981b010009970/src/standalone">standalone</a> SwaggerUI presets and
+should always be used as the last plugin, after all the components are already known to the SwaggerUI.
+The plugin defines a default list of components that should be protected by error boundaries:</p>
+<pre><code class="language-js">[
+  &quot;App&quot;,
+  &quot;BaseLayout&quot;,
+  &quot;VersionPragmaFilter&quot;,
+  &quot;InfoContainer&quot;,
+  &quot;ServersContainer&quot;,
+  &quot;SchemesContainer&quot;,
+  &quot;AuthorizeBtnContainer&quot;,
+  &quot;FilterContainer&quot;,
+  &quot;Operations&quot;,
+  &quot;OperationContainer&quot;,
+  &quot;parameters&quot;,
+  &quot;responses&quot;,
+  &quot;OperationServers&quot;,
+  &quot;Models&quot;,
+  &quot;ModelWrapper&quot;,
+  &quot;Topbar&quot;,
+  &quot;StandaloneLayout&quot;,
+  &quot;onlineValidatorBadge&quot;
+]
+</code></pre>
+<p>As demonstrated below, additional components can be protected by utilizing the safe-render plugin 
+with configuration options. This gets really handy if you are a SwaggerUI integrator and you maintain a number of
+plugins with additional custom components.</p>
+<pre><code class="language-js">const swaggerUI = SwaggerUI({
+  url: &quot;https://petstore.swagger.io/v2/swagger.json&quot;,
+  dom_id: '#swagger-ui',
+  plugins: [
+    () =&gt; ({
+      components: {
+        MyCustomComponent1: () =&gt; 'my custom component',
+      },
+    }),
+    SwaggerUI.plugins.SafeRender({
+      fullOverride: true, // only the component list defined here will apply (not the default list)
+      componentList: [
+        &quot;MyCustomComponent1&quot;,
+      ],
+    }),
+  ],
+});
+</code></pre>
+<h5 id="componentdidcatch">componentDidCatch</h5>
+<p>This static function is invoked after a component has thrown an error.<br />
+It receives two parameters:</p>
+<ol>
+<li><code>error</code> - The error that was thrown.</li>
+<li><code>info</code> - An object with a componentStack key containing <a href="https://reactjs.org/docs/error-boundaries.html#component-stack-traces">information about which component threw the error</a>.</li>
+</ol>
+<p>It has precisely the same signature as error boundaries <a href="https://reactjs.org/docs/react-component.html#componentdidcatch">componentDidCatch lifecycle method</a>,
+except it's a static function and not a class method.</p>
+<p>Default implement of componentDidCatch uses <code>console.error</code> to display the received error:</p>
+<pre><code class="language-js">export const componentDidCatch = console.error;
+</code></pre>
+<p>To utilize your own error handling logic (e.g. <a href="https://www.bugsnag.com/">bugsnag</a>), create new SwaggerUI plugin that overrides componentDidCatch:</p>
+<p>{% highlight js linenos %}
+const BugsnagErrorHandlerPlugin = () =&gt; {
+  // init bugsnag</p>
+<p>return {
+    fn: {
+      componentDidCatch = (error, info) =&gt; {
+        Bugsnag.notify(error);
+        Bugsnag.notify(info);
+      },
+    },
+  };
+};
+{% endhighlight %}</p>
+<h5 id="witherrorboundary">withErrorBoundary</h5>
+<p>This function is HOC (Higher Order Component). It wraps a particular component into the <code>ErrorBoundary</code> component.
+It can be overridden via a plugin system to control how components are wrapped by the ErrorBoundary component.
+In 99.9% of situations, you won't need to override this function, but if you do, please read the source code of this function first.</p>
+<h5 id="fallback">Fallback</h5>
+<p>The component is displayed when the error boundary catches an error. It can be overridden via a plugin system.
+Its default implementation is trivial:</p>
+<pre><code class="language-js">import React from &quot;react&quot;
+import PropTypes from &quot;prop-types&quot;
+
+const Fallback = ({ name }) =&gt; (
+  &lt;div className=&quot;fallback&quot;&gt;
+    😱 &lt;i&gt;Could not render { name === &quot;t&quot; ? &quot;this component&quot; : name }, see the console.&lt;/i&gt;
+  &lt;/div&gt;
+)
+Fallback.propTypes = {
+  name: PropTypes.string.isRequired,
+}
+export default Fallback
+</code></pre>
+<p>Feel free to override it to match your look &amp; feel:</p>
+<pre><code class="language-js">const CustomFallbackPlugin = () =&gt; ({
+  components: {
+    Fallback: ({ name } ) =&gt; `This is my custom fallback. ${name} failed to render`,
+  },
+});
+
+const swaggerUI = SwaggerUI({
+  url: &quot;https://petstore.swagger.io/v2/swagger.json&quot;,
+  dom_id: '#swagger-ui',
+  plugins: [
+    CustomFallbackPlugin,
+  ]  
+});
+</code></pre>
+<h5 id="errorboundary">ErrorBoundary</h5>
+<p>This is the component that implements React error boundaries. Uses <code>componentDidCatch</code> and <code>Fallback</code>
+under the hood. In 99.9% of situations, you won't need to override this component, but if you do, 
+please read the source code of this component first.</p>
+<h5 id="change-in-behavior">Change in behavior</h5>
+<p>In prior releases of SwaggerUI (before v4.3.0), almost all components have been protected, and when thrown error,
+<code>Fallback</code> component was displayed. This changes with SwaggerUI v4.3.0. Only components defined
+by the <code>safe-render</code> plugin are now protected and display fallback. If a small component somewhere within
+SwaggerUI React component tree fails to render and throws an error. The error bubbles up to the closest
+error boundary, and that error boundary displays the <code>Fallback</code> component and invokes <code>componentDidCatch</code>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../../../js/base.js"></script>
+        <script src="../../../../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

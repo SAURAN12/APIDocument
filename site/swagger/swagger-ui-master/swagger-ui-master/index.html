@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>README - Your Documentation Site</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Your Documentation Site</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../../markdown/Introduction/" class="nav-link">Introduction</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../../markdown/authentication/" class="nav-link">Authentication</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../openapi.yaml" class="nav-link">Endpoints</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Swagger UI</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">README</a>
+</li>
+                                    
+<li>
+    <a href="SECURITY/" class="dropdown-item">SECURITY</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Docs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="docs/" class="dropdown-item">README</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Customization</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="docs/customization/add-plugin/" class="dropdown-item">Add Plugin</a>
+</li>
+            
+<li>
+    <a href="docs/customization/custom-layout/" class="dropdown-item">Custom Layout</a>
+</li>
+            
+<li>
+    <a href="docs/customization/overview/" class="dropdown-item">Overview</a>
+</li>
+            
+<li>
+    <a href="docs/customization/plug-points/" class="dropdown-item">Plug Points</a>
+</li>
+            
+<li>
+    <a href="docs/customization/plugin-api/" class="dropdown-item">Plugin API</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Development</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="docs/development/scripts/" class="dropdown-item">Scripts</a>
+</li>
+            
+<li>
+    <a href="docs/development/setting-up/" class="dropdown-item">Setting Up</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Usage</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="docs/usage/configuration/" class="dropdown-item">Configuration</a>
+</li>
+            
+<li>
+    <a href="docs/usage/cors/" class="dropdown-item">CORS</a>
+</li>
+            
+<li>
+    <a href="docs/usage/deep-linking/" class="dropdown-item">Deep Linking</a>
+</li>
+            
+<li>
+    <a href="docs/usage/installation/" class="dropdown-item">Installation</a>
+</li>
+            
+<li>
+    <a href="docs/usage/limitations/" class="dropdown-item">Limitations</a>
+</li>
+            
+<li>
+    <a href="docs/usage/oauth2/" class="dropdown-item">OAuth2</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../openapi.yaml" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="SECURITY/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#_1" class="nav-link"></a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#introduction" class="nav-link">Introduction</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#general" class="nav-link">General</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#compatibility" class="nav-link">Compatibility</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#documentation" class="nav-link">Documentation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#security-contact" class="nav-link">Security contact</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#license" class="nav-link">License</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="_1"><img src="https://raw.githubusercontent.com/swagger-api/swagger.io/wordpress/images/assets/SWU-logo-clr.png" width="300"></h1>
+<p><a href="http://badge.fury.io/js/swagger-ui"><img alt="NPM version" src="https://badge.fury.io/js/swagger-ui.svg" /></a>
+<a href="https://jenkins.swagger.io/view/OSS%20-%20JavaScript/job/oss-swagger-ui-master/"><img alt="Build Status" src="https://jenkins.swagger.io/view/OSS%20-%20JavaScript/job/oss-swagger-ui-master/badge/icon?subject=jenkins%20build" /></a>
+<a href="https://jenkins.swagger.io/job/oss-swagger-ui-security-audit/lastBuild/console"><img alt="npm audit" src="https://jenkins.swagger.io/buildStatus/icon?job=oss-swagger-ui-security-audit&amp;subject=npm%20audit" /></a>
+<img alt="total GitHub contributors" src="https://img.shields.io/github/contributors-anon/swagger-api/swagger-ui.svg" /></p>
+<p><img alt="monthly npm installs" src="https://img.shields.io/npm/dm/swagger-ui.svg?label=npm%20downloads" />
+<img alt="total docker pulls" src="https://img.shields.io/docker/pulls/swaggerapi/swagger-ui.svg" />
+<img alt="monthly packagist installs" src="https://img.shields.io/packagist/dm/swagger-api/swagger-ui.svg?label=packagist%20installs" />
+<img alt="gzip size" src="https://img.shields.io/bundlephobia/minzip/swagger-ui.svg?label=gzip%20size" /></p>
+<h2 id="introduction">Introduction</h2>
+<p><a href="https://swagger.io/tools/swagger-ui/">Swagger UI</a> allows anyone — be it your development team or your end consumers — to visualize and interact with the API’s resources without having any of the implementation logic in place. It’s automatically generated from your OpenAPI (formerly known as Swagger) Specification, with the visual documentation making it easy for back end implementation and client side consumption.</p>
+<h2 id="general">General</h2>
+<p><strong>👉🏼 Want to score an easy open-source contribution?</strong> Check out our <a href="https://github.com/swagger-api/swagger-ui/issues?q=is%3Aissue+is%3Aopen+label%3A%22Good+first+issue%22">Good first issue</a> label.</p>
+<p><strong>🕰️ Looking for the older version of Swagger UI?</strong> Refer to the <a href="https://github.com/swagger-api/swagger-ui/tree/2.x"><em>2.x</em> branch</a>.</p>
+<p>This repository publishes three different NPM modules:</p>
+<ul>
+<li><a href="https://www.npmjs.com/package/swagger-ui">swagger-ui</a> is a traditional npm module intended for use in single-page applications that are capable of resolving dependencies (via Webpack, Browserify, etc.).</li>
+<li><a href="https://www.npmjs.com/package/swagger-ui-dist">swagger-ui-dist</a> is a dependency-free module that includes everything you need to serve Swagger UI in a server-side project, or a single-page application that can't resolve npm module dependencies.</li>
+<li><a href="https://www.npmjs.com/package/swagger-ui-react">swagger-ui-react</a> is Swagger UI packaged as a React component for use in React applications.</li>
+</ul>
+<p>We strongly suggest that you use <code>swagger-ui</code> instead of <code>swagger-ui-dist</code> if you're building a single-page application, since <code>swagger-ui-dist</code> is significantly larger.</p>
+<p>If you are looking for plain ol' HTML/JS/CSS, <a href="https://github.com/swagger-api/swagger-ui/releases/latest">download the latest release</a> and copy the contents of the <code>/dist</code> folder to your server.</p>
+<h2 id="compatibility">Compatibility</h2>
+<p>The OpenAPI Specification has undergone 5 revisions since initial creation in 2010.  Compatibility between Swagger UI and the OpenAPI Specification is as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Swagger UI Version</th>
+<th>Release Date</th>
+<th>OpenAPI Spec compatibility</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.0.0</td>
+<td>2023-06-12</td>
+<td>2.0, 3.0.0, 3.0.1, 3.0.2, 3.0.3, 3.1.0</td>
+<td><a href="https://github.com/swagger-api/swagger-ui/tree/v5.0.0">tag v5.0.0</a></td>
+</tr>
+<tr>
+<td>4.0.0</td>
+<td>2021-11-03</td>
+<td>2.0, 3.0.0, 3.0.1, 3.0.2, 3.0.3</td>
+<td><a href="https://github.com/swagger-api/swagger-ui/tree/v4.0.0">tag v4.0.0</a></td>
+</tr>
+<tr>
+<td>3.18.3</td>
+<td>2018-08-03</td>
+<td>2.0, 3.0.0, 3.0.1, 3.0.2, 3.0.3</td>
+<td><a href="https://github.com/swagger-api/swagger-ui/tree/v3.18.3">tag v3.18.3</a></td>
+</tr>
+<tr>
+<td>3.0.21</td>
+<td>2017-07-26</td>
+<td>2.0</td>
+<td><a href="https://github.com/swagger-api/swagger-ui/tree/v3.0.21">tag v3.0.21</a></td>
+</tr>
+<tr>
+<td>2.2.10</td>
+<td>2017-01-04</td>
+<td>1.1, 1.2, 2.0</td>
+<td><a href="https://github.com/swagger-api/swagger-ui/tree/v2.2.10">tag v2.2.10</a></td>
+</tr>
+<tr>
+<td>2.1.5</td>
+<td>2016-07-20</td>
+<td>1.1, 1.2, 2.0</td>
+<td><a href="https://github.com/swagger-api/swagger-ui/tree/v2.1.5">tag v2.1.5</a></td>
+</tr>
+<tr>
+<td>2.0.24</td>
+<td>2014-09-12</td>
+<td>1.1, 1.2</td>
+<td><a href="https://github.com/swagger-api/swagger-ui/tree/v2.0.24">tag v2.0.24</a></td>
+</tr>
+<tr>
+<td>1.0.13</td>
+<td>2013-03-08</td>
+<td>1.1, 1.2</td>
+<td><a href="https://github.com/swagger-api/swagger-ui/tree/v1.0.13">tag v1.0.13</a></td>
+</tr>
+<tr>
+<td>1.0.1</td>
+<td>2011-10-11</td>
+<td>1.0, 1.1</td>
+<td><a href="https://github.com/swagger-api/swagger-ui/tree/v1.0.1">tag v1.0.1</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="documentation">Documentation</h2>
+<h4 id="usage">Usage</h4>
+<ul>
+<li><a href="https://github.com/swagger-api/swagger-ui/blob/HEAD/docs/usage/installation.md">Installation</a></li>
+<li><a href="https://github.com/swagger-api/swagger-ui/blob/HEAD/docs/usage/configuration.md">Configuration</a></li>
+<li><a href="https://github.com/swagger-api/swagger-ui/blob/HEAD/docs/usage/cors.md">CORS</a></li>
+<li><a href="https://github.com/swagger-api/swagger-ui/blob/HEAD/docs/usage/oauth2.md">OAuth2</a></li>
+<li><a href="https://github.com/swagger-api/swagger-ui/blob/HEAD/docs/usage/deep-linking.md">Deep Linking</a></li>
+<li><a href="https://github.com/swagger-api/swagger-ui/blob/HEAD/docs/usage/limitations.md">Limitations</a></li>
+<li><a href="https://github.com/swagger-api/swagger-ui/blob/HEAD/docs/usage/version-detection.md">Version detection</a></li>
+</ul>
+<h4 id="customization">Customization</h4>
+<ul>
+<li><a href="https://github.com/swagger-api/swagger-ui/blob/HEAD/docs/customization/overview.md">Overview</a></li>
+<li><a href="https://github.com/swagger-api/swagger-ui/blob/HEAD/docs/customization/plugin-api.md">Plugin API</a></li>
+<li><a href="https://github.com/swagger-api/swagger-ui/blob/HEAD/docs/customization/custom-layout.md">Custom layout</a></li>
+</ul>
+<h4 id="development">Development</h4>
+<ul>
+<li><a href="https://github.com/swagger-api/swagger-ui/blob/HEAD/docs/development/setting-up.md">Setting up</a></li>
+<li><a href="https://github.com/swagger-api/swagger-ui/blob/HEAD/docs/development/scripts.md">Scripts</a></li>
+</ul>
+<h4 id="contributing">Contributing</h4>
+<ul>
+<li><a href="https://github.com/swagger-api/.github/blob/HEAD/CONTRIBUTING.md">Contributing</a></li>
+</ul>
+<h5 id="integration-tests">Integration Tests</h5>
+<p>You will need JDK of version 7 or higher as instructed here
+https://nightwatchjs.org/guide/getting-started/installation.html#install-selenium-server</p>
+<p>Integration tests can be run locally with <code>npm run e2e</code> - be sure you aren't running a dev server when testing!</p>
+<h3 id="browser-support">Browser support</h3>
+<p>Swagger UI works in the latest versions of Chrome, Safari, Firefox, and Edge.</p>
+<h3 id="known-issues">Known Issues</h3>
+<p>To help with the migration, here are the currently known issues with 3.X. This list will update regularly, and will not include features that were not implemented in previous versions.</p>
+<ul>
+<li>Only part of the parameters previously supported are available.</li>
+<li>The JSON Form Editor is not implemented.</li>
+<li>Support for <code>collectionFormat</code> is partial.</li>
+<li>l10n (translations) is not implemented.</li>
+<li>Relative path support for external files is not implemented.</li>
+</ul>
+<h2 id="security-contact">Security contact</h2>
+<p>Please disclose any security-related issues or vulnerabilities by emailing <a href="mailto:security@swagger.io">security@swagger.io</a>, instead of using the public issue tracker.</p>
+<h2 id="license">License</h2>
+<p>SwaggerUI is licensed under <a href="https://github.com/swagger-api/swagger-ui/blob/master/LICENSE">Apache 2.0 license</a>.
+SwaggerUI comes with an explicit <a href="https://github.com/swagger-api/swagger-ui/blob/master/NOTICE">NOTICE</a> file
+containing additional legal notices and information.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
